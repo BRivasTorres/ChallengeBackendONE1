@@ -9,8 +9,8 @@ public class MenuPrincipal {
                 "Menu", JOptionPane.PLAIN_MESSAGE, null, opciones,
                 opciones[0]);
         if (opcionSelecionada.equals("Conversor de moneda")) {
-            ConversorDeMonedas conversorDeMonedas = new ConversorDeMonedas();
-            ConversorDeMonedas.Convertir();
+            Cantidad cantidad = new Cantidad();
+            Cantidad.CantidadSeleccionada();
         }
     }
 
