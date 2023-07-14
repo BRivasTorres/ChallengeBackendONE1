@@ -13,5 +13,4 @@ public class MenuPrincipal {
             Cantidad.CantidadSeleccionada();
         }
     }
-
 }

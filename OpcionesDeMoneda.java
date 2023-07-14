@@ -1,10 +1,10 @@
 import java.util.Map;
+import java.util.Arrays;
 import java.util.HashMap;
 import javax.swing.JOptionPane;
-import javax.swing.RowFilter.Entry;
 
 public class OpcionesDeMoneda {
-    public static void main(String[] args) {
+    public void Cambios() {
         Map<String, Double> cambios = new HashMap<>();
         cambios.put("De QGT a Dolares", .13);
         cambios.put("De QGT a Euro", .12);
@@ -18,9 +18,12 @@ public class OpcionesDeMoneda {
         cambios.put("De Won a QGT", 0.0062);
 
         String monedas[] = cambios.keySet().toArray(new String[0]);
+        Arrays.sort(monedas);
 
-        JOptionPane.showInputDialog(null, "Elija la moneda a la que desea convertir su dinero", "Monedas",
+        String monedaSeleccionada = (String) JOptionPane.showInputDialog(null,
+                "Elija la moneda a la que desea convertir su dinero", "Monedas",
                 JOptionPane.PLAIN_MESSAGE, null,
                 monedas, monedas[0]);
+        // System.out.println(cambios.get(monedaSeleccionada));
     }
 }

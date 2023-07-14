@@ -13,7 +13,8 @@ public class Cantidad {
                 JOptionPane.showMessageDialog(null, "Deve ingresar solamente numeros");
             }
         } while (!esNumero);
-        JOptionPane.showMessageDialog(null, "La cantidad ingresada es: " + cantidadStr);
+        OpcionesDeMoneda monedaSelecionada = new OpcionesDeMoneda();
+        monedaSelecionada.Cambios();
     }
 
 }
