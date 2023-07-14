@@ -6,34 +6,21 @@ import javax.swing.RowFilter.Entry;
 public class OpcionesDeMoneda {
     public static void main(String[] args) {
         Map<String, Double> cambios = new HashMap<>();
-        cambios.put("Dolares", .13);
-        cambios.put("Euro", .12);
-        cambios.put("Libras Esterlinas", .10);
-        cambios.put("Yen Japones", 18.27);
-        cambios.put("Won", 166.93);
+        cambios.put("De QGT a Dolares", .13);
+        cambios.put("De QGT a Euro", .12);
+        cambios.put("De QGT a Libras Esterlinas", .10);
+        cambios.put("De QGT a Yen Japones", 18.27);
+        cambios.put("De QGT a Won", 166.93);
+        cambios.put("De Dolares a QGT", 7.84);
+        cambios.put("De Euro a QGT", 8.82);
+        cambios.put("De Libras Esterlinas a QGT", 10.27);
+        cambios.put("De Yen Japones a QGT", 0.057);
+        cambios.put("De Won a QGT", 0.0062);
 
-        String monedas[] = {};
+        String monedas[] = cambios.keySet().toArray(new String[0]);
 
-        // for (Map.Entry<String, Double> entry : cambios.entrySet()) {
-        // monedas[] = { entry.getKey() };
-        // }
-
-        // JOptionPane.showInputDialog(null, "Elija moneda", "Elija moneda", 0, null,
-        // monedas, monedas[0]);
+        JOptionPane.showInputDialog(null, "Elija la moneda a la que desea convertir su dinero", "Monedas",
+                JOptionPane.PLAIN_MESSAGE, null,
+                monedas, monedas[0]);
     }
-
-    // public static void Conversor(int cantidad, String tipo) {
-
-    // Map<String, Double> cambios = new HashMap<>();
-    // cambios.put("Dolares", .13);
-    // cambios.put("Euro", .12);
-    // cambios.put("Libras Esterlinas", .10);
-    // cambios.put("Yen Japones", 18.27);
-    // cambios.put("Won", 166.93);
-
-    // for (Map.Entry<String, Double> entry : cambios.entrySet()) {
-    // System.out.println(entry.getKey());
-    // }
-
-    // }
 }
