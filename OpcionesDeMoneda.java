@@ -4,7 +4,7 @@ import java.util.HashMap;
 import javax.swing.JOptionPane;
 
 public class OpcionesDeMoneda {
-    public void Cambios() {
+    public void Cambios(double cantidad) {
         Map<String, Double> cambios = new HashMap<>();
         cambios.put("De QGT a Dolares", .13);
         cambios.put("De QGT a Euro", .12);
@@ -24,6 +24,8 @@ public class OpcionesDeMoneda {
                 "Elija la moneda a la que desea convertir su dinero", "Monedas",
                 JOptionPane.PLAIN_MESSAGE, null,
                 monedas, monedas[0]);
-        // System.out.println(cambios.get(monedaSeleccionada));
+
+        double cambio = cambios.get(monedaSeleccionada);
+        ValorDeLaConversion.ValorFinal(cantidad, cambio);
     }
 }

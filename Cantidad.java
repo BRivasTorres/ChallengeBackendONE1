@@ -2,7 +2,7 @@ import javax.swing.JOptionPane;
 
 public class Cantidad {
 
-    public static void CantidadSeleccionada() {
+    public void CantidadSeleccionada() {
         String cantidadStr;
         Boolean esNumero = false;
         do {
@@ -13,8 +13,9 @@ public class Cantidad {
                 JOptionPane.showMessageDialog(null, "Deve ingresar solamente numeros");
             }
         } while (!esNumero);
-        OpcionesDeMoneda monedaSelecionada = new OpcionesDeMoneda();
-        monedaSelecionada.Cambios();
-    }
 
+        double cantidad = Double.parseDouble(cantidadStr);
+        OpcionesDeMoneda opcionesDeMoneda = new OpcionesDeMoneda();
+        opcionesDeMoneda.Cambios(cantidad);
+    }
 }

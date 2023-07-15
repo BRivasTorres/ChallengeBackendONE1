@@ -10,7 +10,7 @@ public class MenuPrincipal {
                 opciones[0]);
         if (opcionSelecionada.equals("Conversor de moneda")) {
             Cantidad cantidad = new Cantidad();
-            Cantidad.CantidadSeleccionada();
+            cantidad.CantidadSeleccionada();
         }
     }
 }
