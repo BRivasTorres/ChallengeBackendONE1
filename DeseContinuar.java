@@ -12,8 +12,10 @@ public class DeseContinuar {
             menuPrincipal.menu();
         } else if (option == JOptionPane.NO_OPTION) {
             JOptionPane.showMessageDialog(null, "Programa Finalizado", "Finalizado", JOptionPane.PLAIN_MESSAGE);
+            JOptionPane.showMessageDialog(null, "Programa terminado", "Message", JOptionPane.OK_OPTION);
         } else if (option == JOptionPane.CANCEL_OPTION) {
             JOptionPane.showMessageDialog(null, "Programa Finalizado", "Finalizado", JOptionPane.PLAIN_MESSAGE);
+            JOptionPane.showMessageDialog(null, "Programa terminado", "Message", JOptionPane.OK_OPTION);
         }
     }
 }
