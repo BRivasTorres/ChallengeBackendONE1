@@ -2,7 +2,7 @@ import javax.swing.JOptionPane;
 
 public class MenuPrincipal {
 
-    public static void main(String[] args) {
+    public static void menu() {
         Object[] opciones = { "Conversor de moneda", "Conversor de Temperatura" };
 
         String opcionSelecionada = (String) JOptionPane.showInputDialog(null, "Seleccione una opcion de conversor",
@@ -12,5 +12,10 @@ public class MenuPrincipal {
             Cantidad cantidad = new Cantidad();
             cantidad.CantidadSeleccionada();
         }
+    }
+
+    public static void main(String[] args) {
+        MenuPrincipal menuPrincipal = new MenuPrincipal();
+        menuPrincipal.menu();
     }
 }

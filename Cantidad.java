@@ -10,7 +10,7 @@ public class Cantidad {
             if (cantidadStr.matches("\\d+")) {
                 esNumero = true;
             } else {
-                JOptionPane.showMessageDialog(null, "Valor no Valido");
+                JOptionPane.showMessageDialog(null, "Valor no Valido", "Error", JOptionPane.ERROR_MESSAGE);
             }
         } while (!esNumero);
 
