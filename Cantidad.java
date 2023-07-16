@@ -10,7 +10,7 @@ public class Cantidad {
             if (cantidadStr.matches("\\d+")) {
                 esNumero = true;
             } else {
-                JOptionPane.showMessageDialog(null, "Deve ingresar solamente numeros");
+                JOptionPane.showMessageDialog(null, "Valor no Valido");
             }
         } while (!esNumero);
 
